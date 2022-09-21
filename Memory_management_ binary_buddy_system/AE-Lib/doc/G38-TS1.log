@@ -1,0 +1,66 @@
+G99-TS100: START
+G99-TS100-LOG2: priv_task1: basic memory test on IRAM2
+G99-TS100-LOG : Test[0]-[0]: Allocating all the RAM, check non-NULL return.
+G99-TS100-LOG : Test[0]-[0]: result = 1.
+0 free memory block(s) found
+G99-TS100-LOG : Test[0]-[1]: Check mem2_dump return value is 0.
+G99-TS100-LOG : Test[0]-[1]: result = 1.
+0x2007c000: 0x8000
+1 free memory block(s) found
+G99-TS100-LOG : Test[0]-[2]: Free p[0], checking mem2_dump return val.
+G99-TS100-LOG : Test[0]-[2]: result = 1.
+G99-TS100-LOG : Test[0]-[3]: Deallocating again, check error return.
+G99-TS100-LOG : Test[0]-[3]: result = 1.
+0x2007c000: 0x8000
+1 free memory block(s) found
+G99-TS100-LOG : Test[0]-[4]: Check mem2_dump return value is 1.
+G99-TS100-LOG : Test[0]-[4]: result = 1.
+0x10007000: 0x1000
+1 free memory block(s) found
+G99-TS100-LOG : Test[0]-[5]: Allocating all the RAM, check non-NULL return.
+G99-TS100-LOG : Test[0]-[5]: result = 1.
+G99-TS100-LOG : Test[0]-[6]: Cannot allocating more on the RAM1, check non-NULL return.
+G99-TS100-LOG : Test[0]-[6]: result = 1.
+0 free memory block(s) found
+G99-TS100-LOG : Test[0]-[7]: Check mem_dump return value is 1.
+G99-TS100-LOG : Test[0]-[7]: result = 1.
+0x10007000: 0x1000
+1 free memory block(s) found
+G99-TS100-LOG : Test[0]-[8]: Free p[0], checking mem_dump return val.
+G99-TS100-LOG : Test[0]-[8]: result = 1.
+G99-TS100-LOG : Test[0]-[9]: Deallocating again, check error return.
+G99-TS100-LOG : Test[0]-[9]: result = 1.
+0x10007000: 0x1000
+1 free memory block(s) found
+G99-TS100-LOG : Test[0]-[10]: Check mem_dump return value is one.
+G99-TS100-LOG : Test[0]-[10]: result = 1.
+G99-TS100-LOG : Test[0]-[11]: Allocating 1/128 of full memory, check non-NULL return.
+G99-TS100-LOG : Test[0]-[11]: result = 1.
+G99-TS100-LOG : Test[0]-[12]: Allocating 1/64 of full memory, check non-NULL return.
+G99-TS100-LOG : Test[0]-[12]: result = 1.
+G99-TS100-LOG : Test[0]-[13]: Allocating 1/32 of full memory, check non-NULL return.
+G99-TS100-LOG : Test[0]-[13]: result = 1.
+G99-TS100-LOG : Test[0]-[14]: Allocating 0x46 of full memory, check non-NULL return.
+G99-TS100-LOG : Test[0]-[14]: result = 1.
+0x20080000: 0x4000
+0x2007e000: 0x2000
+0x2007d000: 0x1000
+0x2007c100: 0x100
+0x2007c080: 0x80
+5 free memory block(s) found
+G99-TS100-LOG : Test[0]-[15]: check alloc size for 0x62.
+G99-TS100-LOG : Test[0]-[15]: result = 1.
+0x20080000: 0x4000
+0x2007e000: 0x2000
+0x2007d000: 0x1000
+0x2007c000: 0x200
+4 free memory block(s) found
+G99-TS100-LOG : Test[0]-[16]: free 0x62, check non-NULL return.
+G99-TS100-LOG : Test[0]-[16]: result = 1.
+G99-TS100: FINISHED
+G99-TS100-LOG : Test 0: 17/17 PASSED. Expected = 0x1FFFF, result = 0x1FFFF
+G99-TS100: 1/1 test function(s) COMPLETED.
+G99-TS100: 17/17 tests PASSED.
+G99-TS100: 0/17 tests FAILED.
+G99-TS100: END
+

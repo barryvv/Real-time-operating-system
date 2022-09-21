@@ -1,0 +1,31 @@
+G38-TS1: START
+G38-TS3-LOG2: TID = 1, priv_task1: starting test0
+G38-TS3-LOG: Test[0]-[0]: creating a MEDIUM prio task that runs task2 function.
+G38-TS3-LOG: Test[0]-[0]: result = 1.
+G38-TS3-LOG: Test[0]-[1]: creating a MEDIUM prio task that runs task3 function.
+G38-TS3-LOG: Test[0]-[1]: result = 1.
+AAAAA
+G38-TS3-LOG2: TID = 1, priv_task1: yielding cpu
+G38-TS3-LOG: Test[0]-[2]: priv_task1 calling tsk_yield - 1.
+G38-TS3-LOG: Test[0]-[2]: result = 1.
+BBBBB
+G38-TS3-LOG2: TID = 1, priv_task1: yielding cpu
+G38-TS3-LOG: Test[0]-[3]: priv_task1 calling tsk_yield - 2.
+G38-TS3-LOG: Test[0]-[3]: result = 1.
+G38-TS3-LOG2: TID = 3, task2: entering
+G38-TS3-LOG2: TID = 3, task2: yielding cpu 
+G38-TS3-LOG: real exec order: 1 -> 1 -> 3 -> NIL
+G38-TS3-LOG: expt exec order: 1 -> 1 -> 3 -> NIL
+G38-TS3-LOG: Test[1]-[1]: checking unexpected execution once.
+G38-TS3-LOG: Test[1]-[1]: result = 1.
+G38-TS3-LOG: Test[1]-[2]: checking unexpected execution twice.
+G38-TS3-LOG: Test[1]-[2]: result = 1.
+G38-TS3-LOG: Test[1]-[3]: checking correct number of executions.
+G38-TS3-LOG: Test[1]-[3]: result = 1.
+G38-TS1: FINISHED
+G38-TS3-LOG: Test 0: 4/4 PASSED. Expected = 0xF, result = 0xF
+G38-TS3-LOG: Test 1: 3/3 PASSED. Expected = 0x7, result = 0xE
+G38-TS1: 2/2 test function(s) COMPLETED.
+G38-TS1: 7/7 tests PASSED.
+G38-TS1: 0/7 tests FAILED.
+G38-TS1: END

@@ -1,0 +1,5 @@
+Name,PlannedHours,RealHours,Contributions
+Shihang Wang,24,16,"Testing scheduler and tsk_get  function, implementing tsk_create"
+Ziming Wang,24,18,"Testing scheduler and tsk_ls function, implementing tsk_ls tsk_exit tsk_yield"
+Xueqian Qin,24,12,"Testing scheduler and   lab1 dealloc error situation, implementing lab1 dealloc error situation"
+Bowen Shen,24,24,"Testing scheduler and tsk_set_prio function, implementing tsk_set_prio, scheduler,tsk_get"

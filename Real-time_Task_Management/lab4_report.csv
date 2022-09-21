@@ -1,0 +1,5 @@
+Name,PlannedHours,RealHours,Contributions
+Bowen Shen,24,34," scheduler update, Wall clock function implementation, debug commands"
+Ziming Wang,24,24,"kcd update for wall clock, kcd test, command test"
+Xueqian Qin,24,24,Timer 0 interrupt test Timer
+Shihang Wang,24,24,"test schedule, test wall clock"

@@ -1,0 +1,5 @@
+Name,PlannedHours,RealHours,Contributions
+Shihang Wang,20,20,"Test blocking and non-blocking send and recv, test error case, test mbx create"
+Ziming Wang,20,25,"develop kcd and cdisp, debug kcd and cdisp"
+Bowen Shen,20,25,"develop uart_irq, k_msg , debug kcp disp uart_irq"
+Xueqian Qin,5,5,editing set_task_prio and schedule and debug lab2

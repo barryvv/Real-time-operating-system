@@ -1,0 +1,56 @@
+G38-TS1: START
+G38-TS1-LOG2: TID = 1, task0 entering
+G38-TS1-LOG: Test[0]-[0]: task0: creating a HIGH prio task that runs task1 function.
+G38-TS1-LOG: Test[0]-[0]: result = 1.
+G38-TS1-LOG: Test[0]-[1]: task0: creating a HIGH prio task that runs task2 function.
+G38-TS1-LOG: Test[0]-[1]: result = 1.
+G38-TS1-LOG: Test[0]-[2]: task0: creating a mailbox of size 128 Bytes.
+G38-TS1-LOG: Test[0]-[2]: result = 1.
+G38-TS1-LOG2: TID = 1, task0: calling tsk_yield()
+enter task1
+G38-TS1-LOG: Test[0]-[3]: task1: creating a mailbox of size 128 Bytes.
+G38-TS1-LOG: Test[0]-[3]: result = 1.
+G38-TS1-LOG2: TID = 2, task1 set to RT task
+G38-TS1-LOG2: TID = 2, rt_task1: entering
+G38-TS1-LOG2: TID = 2, task1: caling send_msg_nb
+G38-TS1-LOG2: TID = 2, task1: caling send_msg_nb
+G38-TS1-LOG2: TID = 2, task1: caling send_msg_nb
+G38-TS1-LOG2: TID = 2, task1: caling send_msg_nb
+G38G38-TS1-LOG2: TID = 2, task1: caling send_msg_nb
+G38-TS1-LOG2: TID = 2, rt_task1: exiting...
+G38-TS1-LOG: Test[0]-[4]: non RT call suspend.
+G38-TS1-LOG: Test[0]-[4]: result = 1.
+-TS1-LOG2: TID = 3, task2: entering
+G38-TS1-LOG: Test[0]-[5]: task2: creating a mailbox of size 128 Bytes.
+G38-TS1-LOG: Test[0]-[5]: result = 1.
+G38-TS1-LOG2: TID = 3, task2 set to RT task
+G38-TS1-LOG: Test[0]-[6]: rt_tsk_set again.
+G38-TS1-LOG: Test[0]-[6]: result = 1.
+G38-TS1-LOG2: TID = 3, rt_task2: entering
+G38-TS1-LOG2: TID = 3, task2: caling recv_msg_nb
+G38-TS1-LOG2: TID = 3, task2: calling mem_dealloc
+G38-TS1-LOG2: TID = 3, rt_task2: exiting...
+G38-TS1-LOG: real exec order: 3 -> 3 -> 1 -> NIL
+G38-TS1-LOG: expt exec order: 3 -> 3 -> 1 -> NIL
+G38-TS1-LOG: Test[1]-[0]: checking execution shortfalls.
+G38-TS1-LOG: Test[1]-[0]: result = 1.
+G38-TS1-LOG: Test[1]-[1]: checking unexpected execution once.
+G38-TS1-LOG: Test[1]-[1]: result = 1.
+G38-TS1-LOG: Test[1]-[2]: checking unexpected execution twice.
+G38-TS1-LOG: Test[1]-[2]: result = 1.
+G38-TS1-LOG: Test[1]-[3]: checking correct number of executions.
+G38-TS1-LOG: Test[1]-[3]: result = 1.
+G38-TS1-LOG: Test[1]-[4]: checking execution sequence @ 0.
+G38-TS1-LOG: Test[1]-[4]: result = 1.
+G38-TS1-LOG: Test[1]-[5]: checking execution sequence @ 1.
+G38-TS1-LOG: Test[1]-[5]: result = 1.
+G38-TS1-LOG: Test[1]-[6]: checking execution sequence @ 2.
+G38-TS1-LOG: Test[1]-[6]: result = 1.
+G38-TS1: FINISHED
+G38-TS1-LOG: Test 0: 7/7 PASSED. Expected = 0x7F, result = 0x7F
+G38-TS1-LOG: Test 1: 7/7 PASSED. Expected = 0x7F, result = 0x7F
+G38-TS1: 2/2 test function(s) COMPLETED.
+G38-TS1: 14/14 tests PASSED.
+G38-TS1: 0/14 tests FAILED.
+G38-TS1: END
+
